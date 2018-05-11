@@ -1,30 +1,28 @@
-package core;
+package cache;
 
-import exception.BeansUndefinedException;
+import exception.BeansReplicatedException;
 
 /**
  * @author terry
  * @date 18-5-11
  */
-public interface BeanFactory {
+public interface BeanCache {
 
     /**
-     *
      * @param name
      * @return
      */
-    Object getBean(String name) throws BeansUndefinedException;
+    Object getBean(String name);
 
     /**
-     *
      * @param requiredType
      * @param <T>
      * @return
+     * @throws
      */
-    <T> T getBean(Class<T> requiredType);
+    <T> T getBean(Class<T> requiredType) throws BeansReplicatedException;
 
     /**
-     *
      * @param name
      * @param requiredType
      * @param <T>

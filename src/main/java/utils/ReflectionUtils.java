@@ -5,4 +5,7 @@ package utils;
  * @date 18-5-11
  */
 public class ReflectionUtils {
+
+    private ReflectionUtils() {
+    }
 }

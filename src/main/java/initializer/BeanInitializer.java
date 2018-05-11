@@ -7,4 +7,6 @@ package initializer;
 public interface BeanInitializer {
 
     Object initial();
+
+    <T> T initial(Class<T> requiredType);
 }

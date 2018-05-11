@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="ioc-sample" target="1.5" />
+      <module name="ioc-sample" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

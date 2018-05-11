@@ -1,6 +1,6 @@
 package core;
 
-import exception.BeanUndefinedException;
+import exception.BeansUndefinedException;
 
 /**
  * @author terry
@@ -8,15 +8,15 @@ import exception.BeanUndefinedException;
  */
 public class BeanFactoryImpl implements BeanFactory {
 
-    public Object getBean(String name) throws BeanUndefinedException {
+    public Object getBean(String name) throws BeansUndefinedException {
         return null;
     }
 
-    public <T extends Class<T>> T getBean(T t) {
+    public <T> T getBean(Class<T> requiredType) {
         return null;
     }
 
-    public <T extends Class<T>> T getBean(String name, T t) {
+    public <T> T getBean(String name, Class<T> requiredType) {
         return null;
     }
 }
