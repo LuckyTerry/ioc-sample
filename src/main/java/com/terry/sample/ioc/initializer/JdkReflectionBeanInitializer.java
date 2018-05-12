@@ -26,7 +26,8 @@ public class JdkReflectionBeanInitializer implements BeanInitializer {
         }
 
         List<Class> parameterTypes = constructorArgs.stream()
-                .map(constructorArg -> ClassUtils.loadClass(constructorArg.getValue().getClass().getName()))
+                .map(ConstructorArg::getValue)
+                .map(Object::getClass)
                 .collect(Collectors.toList());
 
         List<Object> values = constructorArgs.stream()
