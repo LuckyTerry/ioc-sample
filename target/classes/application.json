@@ -1,0 +1,62 @@
+[
+  {
+    "name": "student1",
+    "className": "com.terry.sample.ioc.Student",
+    "constructorArgs": [
+      {
+        "name": "name",
+        "value": "terry"
+      }
+    ],
+    "propertyArgs": [
+      {
+        "name": "age",
+        "value": 18
+      },
+      {
+        "name": "address",
+        "reference": "address1"
+      }
+    ]
+  },
+  {
+    "name": "student2",
+    "className": "com.terry.sample.ioc.Student",
+    "constructorArgs": [
+      {
+        "name": "name",
+        "value": "henry"
+      }
+    ],
+    "propertyArgs": [
+      {
+        "name": "age",
+        "value": 28
+      },
+      {
+        "name": "address",
+        "reference": "address2"
+      }
+    ]
+  },
+  {
+    "name": "address1",
+    "className": "com.terry.sample.ioc.Address",
+    "propertyArgs": [
+      {
+        "name": "name",
+        "value": "China"
+      }
+    ]
+  },
+  {
+    "name": "address2",
+    "className": "com.terry.sample.ioc.Address",
+    "propertyArgs": [
+      {
+        "name": "name",
+        "value": "American"
+      }
+    ]
+  }
+]
